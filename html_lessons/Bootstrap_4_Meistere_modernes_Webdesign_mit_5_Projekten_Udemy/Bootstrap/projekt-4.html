@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <title>P4 - Checkout</title>
+    </head>
+    <body class="bg-light pb-5">
+    
+        <!-- Container -->
+        <div class="container">
+            
+            <!-- Header -->
+            <div class="row text-center pt-3 mb-4">
+                <div class="col-12">
+                    <nav>
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item">
+                                <a class="page-link text-secondary" href="#"><span aria-hidden="true">&laquo;</span></a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link text-secondary" href="#">Warenkorb</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link text-dark" href="#">Persönliche Daten</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link text-secondary" href="#">Zusammenfassung</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link text-secondary" href="#"><span aria-hidden="true">&raquo;</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div><i class="fas fa-dice-d20 fa-4x my-3"></i></div>
+                    <h1>Persönliche Daten</h1>
+                    <p class="lead py-2">Vielen Dank für Deinen Einkauf in unserem Shop. Wir hoffen Du wirst mit Deinen neuen Produkten viel Freude haben. Deshalb werden wir sie Dir auch super schnell zustellen. Bevor es soweit ist benötigen wir nur noch einige Angaben.</p>
+                </div>
+            </div>
+            
+            <!-- Content -->
+            <div class="row">
+            
+                <!-- Zusammenfassung Warenkorb -->
+                <div class="col-md-4 order-md-2">
+                    <h3 class="d-flex justify-content-between text-muted mb-3">Warenkorb <span class="badge badge-secondary badge-pill">4</span></h3>
+                    
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="mb-0">Produkt 1</h6>
+                                <small class="text-muted">Beschreibung</small>
+                            </div>
+                            <span class="text-muted">25 &euro;</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="mb-0">Produkt 2</h6>
+                                <small class="text-muted">Beschreibung</small>
+                            </div>
+                            <span class="text-muted">15 &euro;</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="mb-0">Produkt 3</h6>
+                                <small class="text-muted">Beschreibung</small>
+                            </div>
+                            <span class="text-muted">7 &euro;</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="mb-0">Produkt 4</h6>
+                                <small class="text-muted">Beschreibung</small>
+                            </div>
+                            <span class="text-muted">12 &euro;</span>
+                        </li>
+                        <li class="text-primary bg-light list-group-item d-flex justify-content-between">
+                            <div>
+                                <h6 class="mb-0">Promo Code</h6>
+                                <small>CODE NUMMER</small>
+                            </div>
+                            <span>- 18 &euro;</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <h6 class="mb-0 text-uppercase">Gesamt</h6>
+                            <span><b>44 &euro;</b></span>
+                        </li>
+                    </ul>
+                    
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo Code">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-secondary">Einlösen</button>
+                            </div>
+                        </div>
+                    </form>
+                    
+                </div>
+                
+                <!-- Dateneingabe -->
+                <div class="col-md-8 order-md-1">
+                    <h3>Rechnungsadresse</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputFirstName">Vorname</label>
+                                <input type="text" class="form-control" id="inputFirstName" placeholder="Vorname">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputLastName">Nachname</label>
+                                <input type="text" class="form-control" id="inputLastName" placeholder="Nachname">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail">E-Mail-Adresse</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="name@domain.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress">Adresse</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="Beispielstraße 123">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddressExtention">Adresszusatz</label>
+                            <input type="text" class="form-control" id="inputAddressExtention" placeholder="Hinterhaus, Apartment, Stockwerk">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <label for="inputPLZ">PLZ</label>
+                                <input type="text" class="form-control" id="inputPLZ" placeholder="12345">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputCity">Stadt</label>
+                                <input type="text" class="form-control" id="inputCity" placeholder="Stadt">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState">Bundesland</label>
+                                <select id="inputState" class="form-control">
+                                    <option selected>Auswählen...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <h4>Zusätzliche Optionen</h4>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="inputCheckboxAddress">
+                            <label for="inputCheckboxAddress" class="custom-control-label">Die Lieferadresse ist identisch zur Rechnungsadresse</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="inputCheckboxAccount">
+                            <label for="inputCheckboxAccount" class="custom-control-label">Account anlegen und Daten speichern</label>
+                        </div>
+                        <hr>
+                        <h4>Bezahlmethode</h4>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="radioKreditkarte" name="radioPayment" class="custom-control-input">
+                            <label for="radioKreditkarte" class="custom-control-label">Kreditkarte</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="radioDebitkarte" name="radioPayment" class="custom-control-input">
+                            <label for="radioDebitkarte" class="custom-control-label">Debitkarte</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="radioPayPal" name="radioPayment" class="custom-control-input">
+                            <label for="radioPayPal" class="custom-control-label">PayPal</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="radioApplePay" name="radioPayment" class="custom-control-input">
+                            <label for="radioApplePay" class="custom-control-label">Apple Pay</label>
+                        </div>
+                        <div class="form-row mt-3">
+                            <div class="form-group col-md-6">
+                                <label for="cc-name">Kreditkarteninhaber </label>
+                                <input type="text" id="cc-name" class="form-control" placeholder="Max Mustermann">
+                                <small class="text-muted">Der komplette Name wie er auf der Kreditkarte steht</small>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="cc-number">Kartennummer</label>
+                                <input type="text" id="cc-number" class="form-control" placeholder="XXXX XXXX XXXX XXXX">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-3">
+                                <label for="cc-expiration">Ablaufdatum</label>
+                                <input id="cc-expiration" type="text" class="form-control" placeholder="MM/JJ">
+                            </div>
+                            <div class="form-group col-md-3">
+                                <label for="cc-cvv">Sicherheitscode</label>
+                                <input id="cc-cvv" class="form-control" type="text" placeholder="XXX">
+                                <small class="text-muted">CVV</small>
+                            </div>
+                        </div>
+                        <hr>
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Weiter zur Zusammenfassung</button>
+                    </form>
+                </div>
+                
+            </div>
+                
+            <!-- Footer -->
+            <footer class="text-muted text-center pt-5">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Shop</a></li>
+                    <li class="list-inline-item"><a href="#">Impressum</a></li>
+                    <li class="list-inline-item"><a href="#">Datenschutz</a></li>
+                </ul>
+                <p>&copy; 2019 Cube Shop</p>
+            </footer>
+            
+        </div>
+            
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

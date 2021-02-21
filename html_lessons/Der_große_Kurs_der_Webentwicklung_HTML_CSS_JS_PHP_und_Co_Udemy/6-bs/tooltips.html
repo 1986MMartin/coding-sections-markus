@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+        <title>Tooltips</title>
+    </head>
+    <body>
+        <!-- Content Container -->
+        <div class="container mb-5">
+            <h1>Tooltips</h1>
+            <hr>
+            <h3>Einrichtung</h3>
+            <p>Da <strong>Tooltips</strong> auf <em>Popper.js</em> zurückgreifen müssen wir sie selbstständig initialisieren.</p>
+            <p>Der einfachste Weg dazu ist sie über ihr <code>data-toggle</code> Attribut zu initialisieren.</p>
+            <h3>Struktur</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod <a href="#" data-toggle="tooltip" data-html="true" title="<em>Tooltip</em> <u>Text</u>">tempor</a> invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+            <h3>Platzierung</h3>
+            <h4>Oben</h4>
+            <button type="button" class="btn btn-dark" data-toggle="tooltip" title="Tooltip oben" data-placement="top">Tooltip nach Oben</button>
+            <h4>Rechts</h4>
+            <button type="button" class="btn btn-dark" data-toggle="tooltip" title="Tooltip rechts" data-placement="right">Tooltip nach Rechts</button>
+            <h4>Unten</h4>
+            <button type="button" class="btn btn-dark" data-toggle="tooltip" title="Tooltip unten" data-placement="bottom">Tooltip nach Unten</button>
+            <h4>Links</h4>
+            <button type="button" class="btn btn-light">Lorem ipsum dolor sit amet</button>
+            <button type="button" class="btn btn-dark" data-toggle="tooltip" title="Tooltip links" data-placement="left">Tooltip nach Links</button>
+        </div> <!-- Ende Container -->
+        
+        <!-- Optionalen JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- Tooltips aktivieren -->
+        <script>
+            $(function () {
+              $('[data-toggle="tooltip"]').tooltip()
+            })
+        </script>
+    </body>
+</html>

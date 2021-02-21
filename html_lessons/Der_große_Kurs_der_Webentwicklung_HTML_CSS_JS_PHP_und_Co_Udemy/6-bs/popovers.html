@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+        <title>Popovers</title>
+    </head>
+    <body>
+        <!-- Content Container -->
+        <div class="container mb-5">
+            <h1>Popovers</h1>
+            <hr>
+            <h3>Einrichtung</h3>
+            <p>Da <strong>popover</strong> auf Popper.js zurückgreifen müssen wir sie selbstständig initialisieren.</p>
+            <p>Der einfachste Weg dazu ist sie über ihr <code>data-toggle</code> Attribut zu initialisieren.</p>
+            <h3>Struktur</h3>
+            <button type="button" class="btn btn-primary mb-3" data-toggle="popover" title="Popover Beispiel" data-content="Lorem ipsum dolor sit amet.">Popover öffnen bzw. schließen</button>
+            <h3>Platzierung</h3>
+            <h4>Oben</h4>
+            <button type="button" class="btn btn-success mb-3" data-toggle="popover" data-placement="top" title="Popover Beispiel" data-content="Lorem ipsum dolor sit amet.">Nach Oben</button>
+            <h4>Rechts</h4>
+            <button type="button" class="btn btn-success mb-3" data-toggle="popover" data-placement="right" title="Popover Beispiel" data-content="Lorem ipsum dolor sit amet.">Nach Rechts</button>
+            <h4>Unten</h4>
+            <button type="button" class="btn btn-success mb-3" data-toggle="popover" data-placement="bottom" title="Popover Beispiel" data-content="Lorem ipsum dolor sit amet.">Nach Unten</button>
+            <h4>Links</h4>
+            <button type="button" class="btn btn-secondary mb-3">Button zur reinen Linksverschiebung</button>
+            <button type="button" class="btn btn-success mb-3" data-toggle="popover" data-placement="left" title="Popover Beispiel" data-content="Lorem ipsum dolor sit amet.">Nach Links</button>
+            <h3>Dismiss bei Klick</h3>
+            <p>Um ein Popover beim nächsten Klick zu schließen benötigen wir spezielles Markup. Um alle Browser einzuschließen müssen wir in diesem Fall mit <code>a</code> Elementen arbeiten. Außerdem müssen wir das <code>tabindex</code> Attribut einschließen.</p>
+            <p>Der einfachste Weg zum "Dismiss bei Klick" ist es die Popovers über ihren <code>focus</code> trigger anzusprechen.</p>
+            <h4>Beispiel</h4>
+            <a tabindex="0" class="btn btn-warning" role="button" data-toggle="popover" data-trigger="focus" title="Popover Dismiss Beispiel" data-content="Lorem ipsum dolor sit amet.">Popover mit Dismiss bei Klick</a>
+        </div> <!-- Ende Container -->
+        
+        <!-- Optionalen JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- Popover aktivieren -->
+        <script>
+           $(function () {
+              $('[data-toggle="popover"]').popover()
+            }) 
+        </script>
+        
+        <!-- Popover Dismiss -->
+        <script>
+            $('.popover-dismiss').popover({
+              trigger: 'focus'
+            })
+        </script>
+    </body>
+</html>

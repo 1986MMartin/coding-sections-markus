@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Airbnb Look-a-like</title>
+        <style>
+            /*** Allgemein ***/
+            
+            * {
+                font-family: "Open Sans", sans-serif;
+                font-weight: 400;
+                color: #484747;
+                margin: 0px;
+                padding: 0px;
+            }
+            ul {
+                list-style: none;
+            }
+            h3 {
+                font-size: 26px;
+                font-weight: 600;
+            }
+            .clearleft {
+                clear: left;
+            }
+            
+            /*** Struktur ***/
+            
+            .navbar {
+                height: 80px;
+            }
+            .left {
+                float: left;
+            }
+            .right {
+                float: right;
+            }
+            .header {
+                height: 625px;
+                width: 100%;
+                background-image: url('airbnb/header.jpg');
+                background-size: cover;
+            }
+            .container {
+                width: 1050px;
+                margin: auto;
+            }
+            .discover {
+                margin-top: 40px;
+                height: 130px;
+            }
+            .col-quarter {
+                width: 250px;
+                float: left;
+                margin-right: 12.5px;
+            }
+            .airbnbplus {
+                margin-top: 40px;
+            }
+            .accommodations{
+                margin: 40px 0px;
+            }
+            .footer {
+                margin: 40px 0px;
+                overflow: auto;
+            }
+            .row{
+                overflow: auto;
+            }
+            
+            /*** Speziell ***/
+            /* Nav */            
+            #logo {
+                width: 40px;
+                margin: 20px;
+                float: left;
+            }
+            .nav li{
+                display: inline-block;
+                font-size: 14px;
+                margin-top: 30px;
+            }
+            .nav li a{
+                text-decoration: none;
+                padding: 30px 15px;
+            }
+            .nav li a:hover{
+                border-bottom: 2px solid #212121;
+            }
+            /* Header */ 
+            #claim {
+                font-size: 40px;
+                color: white;
+                letter-spacing: 3px;
+                text-shadow: 0px 0px 10px #484747;
+            }
+            .search {
+                width: 950px;
+                margin: auto;
+                padding-top: 240px;
+            }
+            .searchbar {
+                height: 75px;
+                background-color: white;
+                margin-top: 40px;
+                box-shadow: 0px 0px 20px #484747;
+            }
+            #magnifier {
+                width: 20px;
+                margin: 27.5px;
+                float: left;
+            }
+            #search input[type=text]{
+                width: 750px;
+                font-size: 20px;
+                padding: 24.5px 0px;
+                border: none;
+                margin: 0px;
+            }
+            #search input[type=submit]{
+                width: 90px;
+                margin: 12.5px;
+                height: 50px;
+                background-color: #EC6663;
+                color: white;
+                border-radius: 5px;
+                float: right;
+                font-size: 18px;
+                letter-spacing: 1px;
+                font-weight: 300;
+            }
+            /* Discover */ 
+            .discover h3{
+                margin-bottom: 30px;
+            }
+            .discoverprev {
+                width: 95px;
+                float: left;
+            }
+            .discovercat {
+                float: left;
+                font-size: 16px;
+                padding: 22.5px 10px;
+                font-weight: 600;
+                box-shadow: 0px 0px 10px #999999;
+                width: 135px;
+            }
+            /* Airbnbplus */ 
+            .banner {
+                width: 100%;
+                height: 300px;
+                background-image: url('airbnb/airbnbplus.jpg');
+                background-size: cover;
+                background-position: center;
+                margin-top: 20px;
+            }
+            .pluscontent {
+                padding-top: 50px;
+                padding-left: 40px;
+            }
+            .pluscontent p {
+                font-size: 22px;
+                line-height: 1.25;
+                text-shadow: 0px 0px 5px white;
+            }
+            .pluscontent a {
+                width: 290px;
+                padding: 15px;
+                margin: 20px 0px;
+                background-color: white;
+                display: block;
+                font-size: 16px;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 600;
+                border-radius: 5px;
+                box-shadow: 0px 0px 20px #484747;
+            }
+            .pluscontent img {
+                height: 40px;
+                float: left;
+            }
+            .pluscontent #signing {
+                float: left;
+                font-size: 40px;
+                font-family: fantasy;
+            } 
+            /* Accommodations */ 
+            .accommodations h3{
+                margin-bottom: 5px;
+            }
+            .tiles {
+                overflow: auto;
+            }
+            .accommprev {
+                width: 250px;
+                border-radius: 5px;
+                margin-bottom: 5px;
+                margin-top: 15px;
+            }
+            .category, .city {
+                text-transform: uppercase;
+                font-size: 12px;
+                font-weight: 600;
+                float: left;
+            }
+            .city {
+                margin-left: 5px;
+            }
+            .desc {
+                padding-top: 5px;
+                font-size: 20px;
+                font-weight: 600;
+                word-spacing: 2px;
+            }
+            .price {
+                font-size: 15px;
+                font-weight: 100;
+                padding: 5px 0px;
+            }
+            .rating {
+                font-size: 9px;
+            }
+            .rating ul li {
+                float: left;
+            }
+            .count {
+                font-size: 12px;
+                float: left;
+                margin-left: 3px;
+            }
+            #allaccomms {
+                margin-top: 30px;
+            }
+            #allaccomms a {
+                color: #388188;
+                text-decoration: none;
+                font-size: 16px;
+                letter-spacing: 2px;
+            }
+            /* Footer */ 
+            .footer .col-quarter select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                width: 230px;
+                padding: 10px;
+                border: 1px solid grey;
+                border-radius: 0px;
+                background-color: white;
+                margin-bottom: 10px;
+                font-size: 18px;
+                font-weight: 100;
+            }
+            .footer .col-quarter h4{
+                margin-bottom: 20px;
+                font-weight: 600;
+                font-size: 14px;
+                padding-left: 60px;
+            }
+            .footer .col-quarter ul{
+                padding-left: 60px;
+            }
+            .footer .col-quarter ul li {
+                margin: 4px 0px;
+            }
+            .footer .col-quarter ul li a {
+                text-decoration: none;
+                font-size: 14px;
+                letter-spacing: 1px;
+                color: grey;
+            }
+            #footerhr {
+                margin-top: 30px;
+            }
+            #logofooter {
+                width: 40px;
+                margin: 20px;
+                float: left;
+            }
+            #company {
+                float: left;
+                margin: 30px 0px;
+            }
+            #legalnav {
+                margin: 30px 0px;
+            }
+            
+            #legalnav li{
+                float: right;
+                margin: 0px 5px;
+                font-size: 14px;
+            }
+            #legalnav li a{
+                text-decoration: none;
+            }
+            .social {
+                height: 15px;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="left">
+                <img src="airbnb/airbnb.png" id="logo">
+            </div>
+            <div class="right">
+                <ul class="nav">
+                    <li><a href="#">Gastgeber werden</a></li>
+                    <li><a href="#">Hilfe</a></li>
+                    <li><a href="#">Registrieren</a></li>
+                    <li><a href="#">Log-in</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header">
+            <div class="search">
+                <p id="claim">Buche individuelle Unterkünfte und<br> Entdeckungen überall auf der Welt.</p>
+                <div class="searchbar">
+                    <img src="airbnb/magnifier.png" id="magnifier">
+                    <form id="search">
+                        <input type="text" placeholder="Gib z.B. 'Los Angeles' ein">
+                        <input type="submit" value="Suche">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="discover">
+                <h3>Entdecke Airbnb</h3>
+                <div class="col-quarter">
+                    <a href="#">
+                        <img src="airbnb/hotel-1.jpg" class="discoverprev">
+                        <h4 class="discovercat">Unterkünfte</h4>
+                    </a>
+                </div>
+                <div class="col-quarter">
+                    <a href="#">
+                        <img src="airbnb/activity.jpg" class="discoverprev">
+                        <h4 class="discovercat">Entdeckungen</h4>
+                    </a>
+                </div>
+                <div class="col-quarter">
+                    <a href="#">
+                        <img src="airbnb/restaurant.jpg" class="discoverprev">
+                        <h4 class="discovercat">Restaurants</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="airbnbplus clearleft">
+                <h3>Wir stellen Airbnb-Plus vor</h3>
+                <div class="banner">
+                    <div class="pluscontent">
+                        <p>Eine neue Auswahl von Unterkünften,<br> deren Komfort und Qualität verifiziert<br> wurden.</p>
+                        <p><a href="#">Airbnb-Plus-Unterkünfte entdecken</a></p>
+                        <img src="airbnb/airbnb2.png">
+                        <p id="signing">Plus</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accommodations">
+                <h3>Unterkünfte rund um die Welt</h3>
+                <div class="tiles">
+                    <div class="accommodation col-quarter">
+                        <img src="airbnb/hotel-2.jpg" class="accommprev">
+                        <p class="category">Ganze Wohnung &middot; </p>
+                        <p class="city">Kopenhagen</p>
+                        <p class="desc clearleft">Sonniges Penthouse mit 5 Balkonen</p>
+                        <p class="price">206&euro; pro Nacht</p>
+                        <div class="rating">
+                            <ul>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                            </ul>
+                        </div>
+                        <p class="count">320</p>
+                    </div>
+                    <div class="accommodation col-quarter">
+                        <img src="airbnb/hotel-3.jpg" class="accommprev">
+                        <p class="category">Ganzes Haus &middot;</p>
+                        <p class="city">Fujieda</p>
+                        <p class="desc clearleft">Yui Valley-Traditional House</p>
+                        <p class="price">89&euro; pro Nacht</p>
+                        <div class="rating">
+                            <ul>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                            </ul>
+                        </div>
+                        <p class="count">220</p>
+                    </div>
+                    <div class="accommodation col-quarter">
+                        <img src="airbnb/hotel-4.jpg" class="accommprev">
+                        <p class="category">Ganze Wohnung &middot;</p>
+                        <p class="city">Bangkok</p>
+                        <p class="desc clearleft">Designer Loft Bangkok Silom</p>
+                        <p class="price">64&euro; pro Nacht</p>
+                        <div class="rating">
+                            <ul>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                            </ul>
+                        </div>
+                        <p class="count">183</p>
+                    </div>
+                    <div class="accommodation col-quarter">
+                        <img src="airbnb/hotel-5.jpg" class="accommprev">
+                        <p class="category">Ganze Wohnung &middot;</p>
+                        <p class="city">Kotor</p>
+                        <p class="desc clearleft">Waterfront with extraordinary view</p>
+                        <p class="price">36&euro; pro Nacht</p>
+                        <div class="rating">
+                            <ul>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                            </ul>
+                        </div>
+                        <p class="count">92</p>
+                    </div>
+                    <div class="accommodation col-quarter">
+                        <img src="airbnb/hotel-4.jpg" class="accommprev">
+                        <p class="category">Höhle &middot;</p>
+                        <p class="city">Chania</p>
+                        <p class="desc clearleft">Luxurious stone villa in Crete</p>
+                        <p class="price">52&euro; pro Nacht</p>
+                        <div class="rating">
+                            <ul>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                            </ul>
+                        </div>
+                        <p class="count">101</p>
+                    </div>
+                    <div class="accommodation col-quarter">
+                        <img src="airbnb/hotel-5.jpg" class="accommprev">
+                        <p class="category">Ganzes Haus &middot;</p>
+                        <p class="city">Vedado</p>
+                        <p class="desc clearleft">PalacetedelVedado</p>
+                        <p class="price">380&euro; pro Nacht</p>
+                        <div class="rating">
+                            <ul>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                            </ul>
+                        </div>
+                        <p class="count">111</p>
+                    </div>
+                    <div class="accommodation col-quarter">
+                        <img src="airbnb/hotel-2.jpg" class="accommprev">
+                        <p class="category">Campingbus/Wohnmobil &middot;</p>
+                        <p class="city">Alozaina</p>
+                        <p class="desc clearleft">Airstream 'Glamping' in Andalucia!</p>
+                        <p class="price">128&euro; pro Nacht</p>
+                        <div class="rating">
+                            <ul>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                            </ul>
+                        </div>
+                        <p class="count">60</p>
+                    </div>
+                    <div class="accommodation col-quarter">
+                        <img src="airbnb/hotel-3.jpg" class="accommprev">
+                        <p class="category">Höhle &middot;</p>
+                        <p class="city">Santorini</p>
+                        <p class="desc clearleft">Hector Cave House</p>
+                        <p class="price">258&euro; pro Nacht</p>
+                        <div class="rating">
+                            <ul>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                                <li>&#9733;</li>
+                            </ul>
+                        </div>
+                        <p class="count">185</p>
+                    </div>
+                </div>
+                <p id="allaccomms" class="clearleft"><a href="#" >Alle anzeigen (mehr als 2000) &gt;</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="footer clearleft">
+                <div class="row">
+                    <div class="col-quarter">
+                        <form id="settings">
+                            <select>
+                                <option value="Deutsch">Deutsch</option>
+                                <option value="English">English</option>
+                            </select>
+                            <select>
+                                <option value="Euro">Euro</option>
+                                <option value="Dollar">Dollar</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="col-quarter">
+                        <h4>Airbnb</h4>
+                        <ul>
+                            <li><a href="">Karriere</a></li>
+                            <li><a href="">Presse</a></li>
+                            <li><a href="">Richtlinien</a></li>
+                            <li><a href="">Hilfe</a></li>
+                            <li><a href="">Kulturelle Vielfalt</a></li>
+                            <li><a href="">Impressum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-quarter">
+                        <h4>Entdecken</h4>
+                        <ul>
+                            <li><a href="">Vertrauen &amp; Sicherheit</a></li>
+                            <li><a href="">Reiseguthaben</a></li>
+                            <li><a href="">Airbnb Citizen</a></li>
+                            <li><a href="">Geschäftsreisen</a></li>
+                            <li><a href="">Reiseführer</a></li>
+                            <li><a href="">Airbnbmag</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-quarter">
+                        <h4>Gastgeben</h4>
+                        <ul>
+                            <li><a href="">Warum Gastgeben?</a></li>
+                            <li><a href="">Gastfreundschaft</a></li>
+                            <li><a href="">Sei ein guter Gastgeber</a></li>
+                            <li><a href="">Community Center</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="clearleft" id="footerhr">
+                <div class="left">
+                    <img src="airbnb/airbnb2.png" id="logofooter">
+                    <p id="company">&copy; Airbnb, Inc.</p>
+                </div>
+                <div class="right">
+                    <ul id="legalnav">
+                        <li><img src="airbnb/instagram.png" class="social" id="instagram"></li>
+                        <li><img src="airbnb/twitter.png" class="social" id="twitter"></li>
+                        <li><img src="airbnb/facebook.png" class="social" id="facebook"></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Datenschutz</a></li>
+                        <li><a href="#">Nutzungsbedingungen</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

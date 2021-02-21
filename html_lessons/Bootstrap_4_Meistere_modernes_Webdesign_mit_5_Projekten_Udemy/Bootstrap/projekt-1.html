@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+        <title>P1 - Portfolio Webseite</title>
+        
+        <style>
+            #headerCarousel, .carousel-item {
+                height: 500px;
+            }
+            .carousel-item img {
+                min-width: 100%;
+                height: 500px;
+                overflow: hidden;
+            }
+            .seitenAbschnitt {
+                min-height: 500px;
+            }
+            .link-white {
+                color: white;
+            }
+            .link-white:hover {
+                color: #aaa;
+                text-decoration: none;
+            }
+            .social-icon {
+                max-width: 130px;
+                height: auto;
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Navigationsleiste -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">C. Fisher Design</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Header Carousel -->
+        <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#headerCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#headerCarousel" data-slide-to="1"></li>
+                <li data-target="#headerCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/red-fly.jpg" class="d-block w-100" alt="Red Fly">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Momentefesthalter.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-light" href="#portfolio" role="button">Momente ansehen</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/forest-grey.jpg" class="d-block w-100" alt="Forest">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Wirklichkeitsveränderer.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-light" href="#kontakt" role="button">Veränderung herbeiführen</a></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/spider-web.jpg" class="d-block w-100" alt="Spider web">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Netzgestallter.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-light" href="#service" role="button">Services verstehen</a></p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#headerCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Vorheriges</span>
+            </a>
+            <a class="carousel-control-next" href="#headerCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Nächstes</span>
+            </a>
+        </div>
+                
+        <!-- Services Abschnitt -->
+        <div class="container">
+            <div class="row seitenAbschnitt text-center align-items-center" id="service">
+                <div class="col-sm-4">
+                    <i class="fas fa-camera fa-5x mb-3"></i>
+                    <h4>Fotografie</h4>
+                    <a data-toggle="collapse" href="#detailsFotografie" role="button" aria-expanded="false" aria-controls="collapseExample">Mehr erfahren...</a>
+                    <div class="collapse my-2" id="detailsFotografie">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fas fa-pencil-ruler fa-5x mb-3"></i>
+                    <h4>Grafikbearbeitung</h4>
+                    <a data-toggle="collapse" href="#detailsGrafikbearbeitung" role="button" aria-expanded="false" aria-controls="collapseExample">Mehr erfahren...</a>
+                    <div class="collapse my-2" id="detailsGrafikbearbeitung">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <i class="fas fa-object-group fa-5x mb-3"></i>
+                    <h4>Webdesign</h4>
+                    <a data-toggle="collapse" href="#detailsWebdesign" role="button" aria-expanded="false" aria-controls="collapseExample">Mehr erfahren...</a>
+                    <div class="collapse my-2" id="detailsWebdesign">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Portfolio -->
+        <div class="bg-light">
+            <div class="container" id="portfolio">
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="img/forest.jpg" alt="Forest" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="img/desert.jpg" alt="Desert" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="img/waves.jpg" alt="Waves" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="img/winter.jpg" alt="Winter" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="img/waves.jpg" alt="Waves" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="img/winter.jpg" alt="Winter" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 pt-5">
+                        <img src="img/forest.jpg" alt="Forest" class="img-fluid img-thumbnail">
+                    </div>
+                    <div class="col-sm-6 col-md-3 py-5">
+                        <img src="img/desert.jpg" alt="Desert" class="img-fluid img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+                
+        <!-- Social Media Icons -->
+        <div class="container">
+            <div class="row text-center seitenAbschnitt align-items-center" id="socialMedia">
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <a href="#"><img class="img-fluid social-icon" src="img/facebook.png"></a>
+                    <p>Facebook</p>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <a href="#"><img class="img-fluid social-icon" src="img/instagram.png"></a>
+                    <p>Instagram</p>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <a href="#"><img class="img-fluid social-icon" src="img/twitter.png"></a>
+                    <p>Twitter</p>
+                </div>
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <a href="#"><img class="img-fluid social-icon" src="img/youtube.png"></a>
+                    <p>Youtube</p>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-2">
+                    <a href="#"><img class="img-fluid social-icon" src="img/dribbble.png"></a>
+                    <p>Dribbble</p>
+                </div>
+                <div class="col-sm-4 col-md-6 col-lg-2">
+                    <a href="#"><img class="img-fluid social-icon" src="img/behance.png"></a>
+                    <p>Behance</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Kontakt -->
+        
+        
+        <!-- Footer -->
+        
+        
+        <!-- Modal -->
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery, Popper.js, Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

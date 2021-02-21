@@ -1,0 +1,57 @@
+/* Allgemein */
+* {
+    font-family: "Open Sans", "Arial", sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* Navbar */
+.nav {
+    height: 90px;
+    background-color: #bdc3c7;
+}
+.nav-logo {
+    float: left;
+}
+.nav-logo img {
+    height: 60px;
+    margin: 15px;
+}
+.nav-links {
+    float: right;
+}
+.nav-links ul li {
+    float: left;
+}
+.nav-links ul li a{
+    display: inline-block;
+    padding: 33px 15px;
+    font-size: 20px;
+}
+.nav-links ul li a:link {
+    border-left: 1px solid #ecf0f1;
+    color: black;
+}
+.nav-links ul li a:visited {
+    border-left: 1px solid #ecf0f1;
+    color: black;
+}
+.nav-links ul li a:hover {
+    background-color: #ecf0f1;
+}
+/* Header */
+.header {
+    background-image: url(airbnb/restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 210px;
+    padding: 100px 0px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
