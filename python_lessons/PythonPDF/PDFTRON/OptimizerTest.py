@@ -40,9 +40,9 @@ from PDFNetPython3 import *
 def main():
     
     # Relative path to the folder containing the test files.
-    input_path = "../../TestFiles/"
-    output_path = "../../TestFiles/Output/"
-    input_filename = "newsletter"
+    input_path = "/Users/mmartin/Documents/OCR_TestOrdner/" # "../../TestFiles/"
+    output_path = "/Users/mmartin/Documents/OCR_TestOrdner/Output/" # "../../TestFiles/Output/"
+    input_filename = "20210205_142153"
     
     # The first step in every application using PDFNet is to initialize the 
     # library and set the path to common PDF resources. The library is usually 
