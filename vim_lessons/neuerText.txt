@@ -3,3 +3,5 @@ Das ist ein Test!
 Eine neue Zeile.
 
 Hier kommt Text den ich mit dem Vim-Editor geschrieben habe.
+
+hier kommt ein weiterer Text aus Textastic vom iPhone geschrieben.
