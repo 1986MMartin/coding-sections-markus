@@ -1,0 +1,18 @@
+Vim-Plug
+CtrlP
+NERDTree
+UltiSnips
+vim-nultiple-cursors
+gundo
+vim-airline
+vim-one
+
+
+#########################################
+Optional tolle Plugins
+
+fugitive
+syntastic
+solarized
+youcompleteme
+easymotion
