@@ -1,0 +1,2 @@
+Hier kommt ein weiterer Text.
+Hier ist ein neuer Text den ich mit Vim geschrieben habe.

@@ -8,7 +8,7 @@ darfst!
 -------------------------------------------------------------------------------
 # Etwas schreiben
 
-Wechsle in den Insert-Mode und schreibe etwas Text.  Du kannst mit den
+Wechslt in den Insert-Mode und schreibe etwas Text.  Du kannst mit den
 Pfeiltasten navigieren.
 
 Wenn du fertig bist, wechsle wieder in den Normal-Mode. 
