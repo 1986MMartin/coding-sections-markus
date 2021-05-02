@@ -1,0 +1,57 @@
+
+Git allgemein:
+- git clone
+- git init
+- git add
+- git push
+- git pull
+
+# Git log:
+- git log
+- git log -p --> lange Version des git logs
+- git log --oneline --> kurze Version des git logs
+- git log -- <filename> --> gibt log nur von file-name aus
+
+# Git commit:
+- git commit -m --> nach m dann in "" die Nachricht. Alternativ ohne m, dann vim o. nano editor
+- git commit --amend --> Abänderung des vorherigen commits. ACHTUNG!!! nur offline verwenden
+
+# Git diff:
+- git diff --> zeigt Änderung zur Staging Area an
+- git diff --cached --> zeigt gestagete Änderungen an
+- git diff <hash1> <hash2> --> zeigt die Änderungen zwischen zwei Commits
+- git diff -- <filename> --> gibt diff nur von file-name aus
+
+# Git reset:
+- git reset --> Nimmt alle Änderungen aus der Staging-Area raus
+- git reset <filename> --> Nimmt Änderungen aus der Staging-Area raus
+- git reset <commit hash> --> Löscht alle Commits nach <commit hash>, Alle Änderungen bleibem im working directory bestehen
+- git reset --hard <commit hash> --> Löscht alle Commits nach <commit hash> Änderungen werden verworfen
+
+# Git checkout:
+-> git checkout <commit hash> --> stellt den Zustand von einem commit wieder her
+-> git checkout master --> Sprint zurück zum master
+-> 
+
+# Git stash
+-> git stash --> sichert den aktuellen Stand vom working directory
+-> git stash pop --> stellt den letzten stand vom working directory wieder her
+-> git stash list --> zeigt alle Stashes an
+-> git diff stash --> zeigt den diff des letzten Stashes an
+
+# Git ignor
+-> im root-Ordner soll eine Datei ".gitignore" angelegt werden.
+
+# Git Löschen - Umbenennen
+-> Git rm --> löschen einer Datei
+-> Git mv --> Bewegt eine datei
+
+# Git blame:
+-> git blame <filename> --> Zeigt Zeile für Zeile an, in welchem Commit diese zuletzt geändert wurde
+-> git blame --color-lines <filename> --> gleiche Commits farblich hervorgehoben
+
+
+
+
+
+
