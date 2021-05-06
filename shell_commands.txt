@@ -58,8 +58,11 @@ Git allgemein:
 -> git checkout <branch name> --> wechselt zu einem Branch
 -> git checkout -b <branch name> --> Shortcut, legt einen neuen Branch an, und wechselt direkt dorthin
 
+# Git merge (fast forward)
+-> git merge <branch> --> Versucht den Branch branch mit dem aktuellen Branch zusammenzuführen
+-> git checkout master -> git merge <feature> --> Best practice: Nach dem Mergen den Branch löschen -> git branch -d <feature>
 
-
-
+# Git merge (3-Way-Merge)
+-> siehe oben Git Merge (fast forward)
 
 
