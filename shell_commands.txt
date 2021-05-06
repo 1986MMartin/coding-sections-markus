@@ -11,6 +11,8 @@ Git allgemein:
 - git log -p --> lange Version des git logs
 - git log --oneline --> kurze Version des git logs
 - git log -- <filename> --> gibt log nur von file-name aus
+-> git log --oneline --graph
+-> git log --oneline --graph --branches
 
 # Git commit:
 - git commit -m --> nach m dann in "" die Nachricht. Alternativ ohne m, dann vim o. nano editor
@@ -49,6 +51,12 @@ Git allgemein:
 # Git blame:
 -> git blame <filename> --> Zeigt Zeile für Zeile an, in welchem Commit diese zuletzt geändert wurde
 -> git blame --color-lines <filename> --> gleiche Commits farblich hervorgehoben
+
+# Git brance:
+-> git branch --> zeigt alle vorhandenen Branches an
+-> git branch <branch name> --> legt einen neuen Branch an
+-> git checkout <branch name> --> wechselt zu einem Branch
+-> git checkout -b <branch name> --> Shortcut, legt einen neuen Branch an, und wechselt direkt dorthin
 
 
 
