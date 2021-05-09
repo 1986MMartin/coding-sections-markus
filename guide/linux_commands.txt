@@ -1,0 +1,14 @@
+--> Verbindung mit über SSH mit einem Server
+- ssh username@host-ip-adress
+- ssh -l username host-ip-adress
+----------------------------------------------------
+--> Neuen User anlegen
+- sudo adduser
+----------------------------------------------------
+--> User Root Rechte geben
+- usermod -aG sudo username
+----------------------------------------------------
+--> Zwischen Root und User wechseln
+- su - username
+----------------------------------------------------
+
