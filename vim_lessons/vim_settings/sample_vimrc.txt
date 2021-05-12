@@ -1,7 +1,7 @@
 source /usr/share/vim/vim81/defaults.vim
 
 set nocompatible
-set guifont=Source\ Code\ Pro\ for\ Powerline\ 20
+set guifont=Source\ Code\ Pro\ for\ Powerline\ 18
 set guioptions=agit
 
 syntax enable
