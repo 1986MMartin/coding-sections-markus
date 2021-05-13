@@ -3,7 +3,7 @@ import numpy as np
 
 c = ['tea', 'water', 'cola', 'pepsi']
 
-fruits = ['apple', 'bananna', 'cherry']
+fruits = ['apple', 'bananna', 'cherry', 'peaches']
 
 for x in fruits:
 	print(x)
