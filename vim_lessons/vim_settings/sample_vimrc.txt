@@ -1,5 +1,8 @@
 source /usr/share/vim/vim81/defaults.vim
 
+" def new variables 
+let $RC="$HOME/.vimrc"
+
 set nocompatible
 set guifont=Source\ Code\ Pro\ for\ Powerline\ 18
 set guioptions=agit
@@ -9,6 +12,7 @@ filetype plugin indent on
 set autoindent
 set expandtab
 set hidden
+set noswapfile
 set encoding=utf-8
 set hlsearch
 set history=1000
@@ -22,17 +26,15 @@ set undofile
 set undodir=$HOME/Programme/vim_settings/vimundo/
 set undolevels=1000
 
-call plug#begin('~/.vim/plugged')
+"call plug#begin('~/.vim/plugged')
 
-Plug 'scrooloose/nerdtree'
-Plug 'kien/ctrlp.vim'
-Plug 'sirver/ultisnips'
-Plug 'terryma/vim-multiple-cursors'
-Plug 'sjl/gundo.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'rakr/vim-one'
-Plug 'scrooloose/syntastic'
+"Plug 'scrooloose/nerdtree'
+"Plug 'kien/ctrlp.vim'
+"Plug 'sirver/ultisnips'
+"Plug 'terryma/vim-multiple-cursors'
+"Plug 'sjl/gundo.vim'
+"Plug 'vim-airline/vim-airline'
+"Plug 'rakr/vim-one'
+"Plug 'scrooloose/syntastic'
 
-
-
-call plug#end()
+"call plug#end()
