@@ -23,7 +23,7 @@ set wildmenu
 set foldcolumn=1
 
 set undofile
-set undodir=$HOME/Programme/vim_settings/vimundo/
+set undodir=$HOME/Programme/vim/settings/vimundo/
 set undolevels=1000
 
 "call plug#begin('~/.vim/plugged')
