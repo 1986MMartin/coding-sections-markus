@@ -34,6 +34,7 @@ set undolevels=1000
 "Plug 'terryma/vim-multiple-cursors'
 "Plug 'sjl/gundo.vim'
 "Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 "Plug 'rakr/vim-one'
 "Plug 'scrooloose/syntastic'
 
