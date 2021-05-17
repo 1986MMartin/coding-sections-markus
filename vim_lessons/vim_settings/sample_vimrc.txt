@@ -2,6 +2,7 @@ source /usr/share/vim/vim81/defaults.vim
 
 " def new variables 
 let $RC="$HOME/.vimrc"
+set path+=**
 
 set nocompatible
 set guifont=Source\ Code\ Pro\ for\ Powerline\ 18
@@ -21,6 +22,7 @@ set relativenumber
 set scrolloff=7
 set wildmenu
 set foldcolumn=1
+set incsearch
 
 set undofile
 set undodir=$HOME/Programme/vim/settings/vimundo/
