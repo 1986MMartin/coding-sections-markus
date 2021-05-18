@@ -22,7 +22,7 @@ echo "-----------------------------------------"
 echo "install git and set global config successful!"
 echo "-----------------------------------------"
 
-sudo apt-get install zsh
+sudo apt-get install zsh -y
 
 echo "-----------------------------------------"
 echo "install zsh successful!"
