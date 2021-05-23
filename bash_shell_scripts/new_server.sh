@@ -41,12 +41,13 @@ echo "-----------------------------------------"
 echo "install zsh successful!"
 echo "-----------------------------------------"
 
-# mkdir $HOME/coding
-mkdir $HOME/Downloads
-mkdir $HOME/Programme
-mkdir $HOME/Programme/vim
-mkdir $HOME/Programme/vim/settings
-mkdir $HOME/Programme/vim/settings/vimundo
+FOLDER=$HOME/Downloads
+if [ -d "$FOLDER" ]; then
+	echo "Folder $FOLDER exists."
+else
+	mkdir $FOLDER
+fi
+mkdir -p $HOME/Programme/vim/settings/vimundo
 
 echo "-----------------------------------------"
 echo "mkdir commands successful"
