@@ -55,9 +55,11 @@ Git allgemein:
 # Git brance:
 -> git branch --> zeigt alle vorhandenen Branches an
 -> git branch <branch name> --> legt einen neuen Branch an
+-> git branch -d <branch name> --> löscht eine Branch
+
+# Git checkout:
 -> git checkout <branch name> --> wechselt zu einem Branch
 -> git checkout -b <branch name> --> Shortcut, legt einen neuen Branch an, und wechselt direkt dorthin
--> git branch -d <branch name> --> löscht eine Branch
 
 # Git merge (fast forward)
 -> git merge <branch> --> Versucht den Branch branch mit dem aktuellen Branch zusammenzuführen
