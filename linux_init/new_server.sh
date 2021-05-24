@@ -43,6 +43,10 @@ mkdir -p $HOME/Programme/vim/settings/vimundo
 echo "-----------------------------------------"
 echo "mkdir commands successful"
 echo "-----------------------------------------"
+cp -rf $HOME/coding/coding-sections-markus/linux_init/vim_settings/sample_vimrc.txt $HOME/.vimrc
+echo "-----------------------------------------"
+echo "vimrc successful!"
+echo "-----------------------------------------"
 sudo apt-get update
 sudo apt-get upgrade -y
 echo "-----------------------------------------"
