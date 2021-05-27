@@ -17,6 +17,10 @@
 --> Änderung des Eigentümers von Dateien und Ordnern
 - sudo chown username:username <Ordner>
 ----------------------------------------------------
+--> Änderung Hostname des PCs
+- su - root
+- vim /etc/hostname -> öffnen und Hostname ändern, anschließend sudo reboot
+----------------------------------------------------
 --> Dateien / Ordner von PC an Server senden
 scp -r <Folder/File> <hostname@host_ip:Folder/File> -> sendet von PC an Server
 scp -r <hostname@host_ip:Folder/File> <Folder/File> -> sendet von Server an PC
