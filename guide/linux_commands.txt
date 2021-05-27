@@ -5,6 +5,9 @@
 --> Neuen User anlegen
 - sudo adduser
 ----------------------------------------------------
+--> Passwort für User root setzen
+- sudo passwd root
+----------------------------------------------------
 --> User Root Rechte geben
 - usermod -aG sudo username
 ----------------------------------------------------
