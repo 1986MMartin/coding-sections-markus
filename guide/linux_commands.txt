@@ -26,7 +26,7 @@ scp -r <Folder/File> <hostname@host_ip:Folder/File> -> sendet von PC an Server
 scp -r <hostname@host_ip:Folder/File> <Folder/File> -> sendet von Server an PC
 ----------------------------------------------------
 --> xrdp Server installieren -> für Remote-Desktop (Windows, Mac)
-- sudo apt-get install xrdp
+- sudo apt install xrdp
 - sudo systemctl enable --now xrdp
 - sudo ufw allow from any to any port 3389 proto tcp
 ----------------------------------------------------
