@@ -26,14 +26,25 @@ scp -r <Folder/File> <hostname@host_ip:Folder/File> -> sendet von PC an Server
 scp -r <hostname@host_ip:Folder/File> <Folder/File> -> sendet von Server an PC
 ----------------------------------------------------
 --> xrdp Server installieren -> für Remote-Desktop (Windows, Mac)
+-- Option 1.)
 - sudo apt install xrdp
 - sudo systemctl enable --now xrdp
 - sudo ufw allow from any to any port 3389 proto tcp
+
+-- Option 2.)
+- sudo apt-get -y install xrdp
+- sudo systemctl enable xrdp
+- echo xfce4-session >~/.xsession
+- sudo service xrdp restart
+
 ----------------------------------------------------
---> Raspberry-Pi Ubuntu Server GUI install
+--> Raspberry-Pi Ubuntu Server GUI xubuntu xfce4 install
 - sudo apt install language-pack-de language-pack-de-base
 - sudo dpkg-reconfigure locales
 - sudo dpkg-reconfigure keyboard-configuration
 - sudo timedatectl set-timezone Europe/Berlin
 - sudo apt install xubuntu-desktop
+- sudo apt install xfce4
+
+sudo apt install language-pack-de language-pack-de-base && sudo dpkg-reconfigure locales && sudo dpkg-reconfigure keyboard-configuration && sudo timedatectl set-timezone Europe/Berlin && sudo apt install xubuntu-desktop -y && sudo apt install xfce4 -y
 ----------------------------------------------------
