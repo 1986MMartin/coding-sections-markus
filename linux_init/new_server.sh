@@ -4,6 +4,14 @@ sudo apt upgrade -y
 echo "-----------------------------------------"
 echo "update and upgrade commands successful!"
 echo "-----------------------------------------"
+sudo apt install vim -y
+echo "-----------------------------------------"
+echo "install vim editor"
+echo "-----------------------------------------"
+sudo apt install nano -y
+echo "-----------------------------------------"
+echo "install nano editor"
+echo "-----------------------------------------"
 sudo apt install openssh-server -y
 echo "-----------------------------------------"
 echo "install openssh-server successful!"
