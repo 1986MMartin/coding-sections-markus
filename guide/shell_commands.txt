@@ -5,6 +5,7 @@ Git allgemein:
 -> git add
 -> git push
 -> git pull
+-> git status
 
 # Git log:
 -> git log
