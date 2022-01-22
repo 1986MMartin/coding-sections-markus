@@ -1,2 +1,19 @@
 FileIcons
 SideBarEnhancements
+
+Emmet -> Snipstool für CSS und HTML
+
+Git
+GitGutter
+
+Advanced New File -> Tastenkombination Strg+Alt+N -> erzeugt neues File im aktuellen Ordner
+
+Bracket Highlighter
+Auto File Name
+
+View in Browser -> Tastenkombination Strg+Alt+V öffnet den definierten Browser
+
+---------------------------------------------
+
+Menu: Preferences -> Select Color Scheme -> "Monokai"
+Menu: Preferences -> Select Theme -> "Default Dark"
