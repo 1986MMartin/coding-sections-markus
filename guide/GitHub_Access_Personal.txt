@@ -1,0 +1,7 @@
+Ordner .git -> dort die config öffnen.
+
+Die hinterlegte URL wie folgt ändern.
+
+https://1986MMartin:[TOKEN]@github.com/1986Mmartin/[name_reposetory].git
+
+Token kann in GitHub unter Profil Settings, Development Settings -> Personal access token vergeben werden.
